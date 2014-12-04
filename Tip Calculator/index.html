@@ -1,0 +1,33 @@
+<html>
+	<head>
+  		<title>Tip Calculator</title>
+	</head>
+	<body>
+  		<p>Hey there! You've probably been drinking, so let me calculate your meal total for you:</p>
+
+  		Base price of Meal: $<input type="text" id="meal" value="100"/>
+  		<br>
+
+  		Tax rate: <input type="text" id="tax" value="5"/>%
+  		<br>
+
+  		Tip rate:<input type="text" id="tip" value="20"/>%
+  		<br>
+
+		<button onclick="tipCalc(meal.value,tax.value,tip.value)">Calculate Total</button>
+
+  		<script type="text/javascript" src="tip_calc.js"></script>
+
+  		<p id="breakdown"></p>
+  		<p id="tot_amt"></p>
+
+  		<!--
+  		<script type="text/javascript">
+ 			function myJsFunction(){
+    			var text=document.getElementById('input1').value;
+			 }
+		</script>
+		-->
+
+	</body>
+</html>
